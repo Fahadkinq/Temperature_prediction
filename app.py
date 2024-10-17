@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import joblib
+from sklearn.ensemble import GradientBoostingRegressor      
 
 model = joblib.load('xg_boost.pkl')
 st.title('Temperature Prediction(max)')
